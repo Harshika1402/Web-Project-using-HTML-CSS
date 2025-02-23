@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial,sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+        }
+        .navbar a {
+            color:white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #333131;
+        }
+        .navbar .logo {
+            font-size: 20 px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            margin-left: 30%;
+            display:flex;
+        }
+        body {
+            background-image: url(hotel1.jpg);
+            background-color: azure;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .grid-container {
+            display:flex;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 40%;
+            height:40%;
+            text-align: center;
+            margin-left: 400px;
+            
+        }
+           
+           
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 50px;
+            text-align: center;
+            color: blanchedalmond;
+        }
+        
+       #luxury {
+        text-align: center;
+        font-size:20px ;
+       }
+       #luxurious {
+        text-align: center;
+        font-size: 40px;
+       }
+       #button1 {
+        text-align: center;
+        font-size: 90px;
+       }
+       #about {
+       padding: 95px 80px;
+        background-color: aliceblue;
+       }
+       #forms {
+        background-color: rgb(2, 2, 1);
+        padding-top: 0px;
+        text-align: center;
+        padding-bottom: 0px;
+        color:rgb(214, 148, 7);
+        
+       }
+       .button2 {
+        font-size: 20px;
+        padding: 2px 2px;
+        width:200px;
+        text-align: center;
+        background-color: hsl(39, 100%, 50%);
+       }
+       #rooms {
+        text-align: center;
+        font-size:20px ;
+        background-color:azure;
+        color:hsl(39, 100%, 50%);
+       }
+       #explore{
+        text-align: center;
+        font-size: 20px;
+        background-color: azure;
+        color: black;
+        padding-bottom: 30px;
+       }
+       .description {
+        background-color: rgb(224, 240, 235);
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+       }
+       .button3 {
+        background-color:hsl(39, 100%, 50%) ;
+        text-transform: uppercase;
+        color: white;
+       }
+      .button4 {
+        background-color: #333131;
+        color: white;
+      }
+      .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 20%;
+            height:20%;
+            text-align: center;
+            margin-left:250px ;
+        }
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+        }
+        .nav a {
+            color:white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #333131;
+        }
+        .nav .logo {
+            font-size: 20 px;
+            font-weight: bold;
+        }
+        .nav .menu {
+            margin-left: auto;
+            display:flex;}
+           
+           
+        .grid-data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px;
+           
+            color: blanchedalmond;
+        }
+     
+       
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PalmBreeze Paradise</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo"><h1 style="text-align: center; color: hsl(39, 100%, 50%);">PalmBreeze Paradise</h1></a>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        </div>
+        <div id="luxury" style="color:aliceblue;"><br><br><br><br><br><br><br><h6>----------- LUXURY LIVING -----------</h6>
+        </div>
+        <div id="luxurious" style="color: white;"><h1>Discover A Brand 
+        <br>Luxurious Hotel</h1></div>
+        
+         <form action="Book a room.org">
+            <div id="button1"><button type="submit"style="background-color:hsl(39, 100%, 50%)"><h3>OUR ROOMS</h3></button>
+            <button type="submit"><h3><a href="Book a Room.html" style="color:black; text-decoration: none;"> BOOK A ROOM</a></h3></button></div></form>
+         <br><br><br> <br><br><br> <br><br><br>
+         <div id="forms"><form>
+            <legend>
+                <fieldset style="margin-top: 10px; padding-top: 20px;">
+            
+                    <label for="date">Check in</label>
+                    <input type="date" id="date">
+
+                    <label for="time"></label>
+                    <input type="time" id="time">
+
+                    <label for="date">Check out</label>
+                    <input type="date" id="date">
+
+                    <label for="time"></label>
+                    <input type="time" id="time">
+
+                    <label for="adult"></label>
+                    <input type="number" id="adult" placeholder="Adult">
+
+                    <label for="child"></label>
+                    <input type="number" id="child" placeholder="Child">
+
+                    <button type="submit" class="button2">SUBMIT</button>
+                </fieldset>
+            </legend>
+               </div>
+         </form>
+        
+        <div id="about">
+            <h4 style="color: hsl(39, 100%, 50%);">ABOUT US ----------</h4><br>
+            <h1>Welcome To</h1><h1 style="color: hsl(39, 100%, 50%);"> PalmBreeze Paradise</h1>
+            <p style="text-align: center;">"At PalmBreeze Paradise, we're dedicated to providing exceptional hospitality and unforgettable
+                experiences for our guests. Our story began [number] years ago, when our founders envisioned 
+                a hotel that would feel like a home away from home.
+                Today, our hotel is a vibrant and welcoming destination, where travelers can relax, recharge'
+                 and connect with others. Our team is passionate about delivering outstanding service, from
+                  the warm welcome at check-in to the thoughtful touches throughout your stay.</p>
+         </div>
+         <div class="grid-container">
+      
+         <div class="grid-item">
+            <h3>1234<br><br>Rooms</h3><br>
+                
+
+         </div>
+         
+          <div class="grid-item">
+            <h3>1584<br><br>Staffs</h3><br>
+
+          </div>
+        
+           <div class="grid-item">
+            
+            <h3>5341<br><br>Clients</h3><br>
+        </div>
+        </div>
+        <div id="rooms" ><br><br><br><br><br><br><br><h6>----------- OUR ROOMS -----------</h6>
+        </div>
+        <div id="explore"><h1>Explore Our ROOMS</h1></div>
+        <div style="background-color: beige; padding-top: 30px; padding-bottom: 10px; text-align: center;"><h1>Junior Suit Room</h1></div>
+
+        <div style="background-color: beige;text-align: center;"><img src="junior suit.jpg"></div>
+        <div class="description">
+          • Occupancy : 4
+            • Number of Childrens : 2
+                • Number of Beds : 2
+                • Bed Type : King Bed
+                • Room View : River View
+                • Size : 42 m²
+                <br><br><hr>
+                <h3>Description</h3>
+                <p style="font-family: Arial;">Junior Suite rooms are ideal for a small family of 02 Adults and 02 Children, having two
+                     independent floors with independent attached bathrooms & amenities both floor have master
+                      bed rooms.Room is having excellent view of river & snow clad mountains. </p>
+                      <br>
+                      <button type="submit"class="button3">View Details</button>
+                      <button type="submit"class="button4" >BOOK NOW</button>
+      </div>
+      <div style="background-color: beige; padding-top: 30px; padding-bottom: 10px; text-align: center;"><h1>Executive Suit Room</h1></div>
+      <div style="background-color: beige;text-align: center;"><img src="executive suit.jpg" width="800px" height="500px"></div>
+        <div class="description">
+          • Occupancy : 8
+            • Number of Childrens : 4
+                • Number of Beds : 4
+                • Bed Type : King Bed
+                • Room View : Bay View
+                • Size : 73 m²
+                <br><br><hr>
+                <h3>Description</h3>
+                <p style="font-family: Arial;">An Executive Suite is a premium office space or set of offices
+                    designed for senior executives. It typically includes private offices, meeting rooms, and
+                    access to shared amenities such as reception services, lounges, and conference
+                    facilities.These spacious, elegant suites have been thoughtfully designed as a space for you to 
+                    immerse yourself in the city, while enjoying all the comforts of an Oberoi experience. Striking 
+                    cityscape views framed in wall to wall windows, a king size master bedroom, a chic living room and
+                    a spectacular bathroom. All topped off with our round the clock, matchless hospitality. </p><br>
+                    <button type="submit"class="button3">View Details</button>
+                    <button type="submit"class="button4">BOOK NOW</button>
+      </div>
+      <div style="background-color: beige; padding-top: 30px; padding-bottom: 10px; text-align: center;"><h1>Super Delux Suit Room</h1></div>
+      <div style="background-color: beige;text-align: center;"><img src="super delux.jpg" width="800px" height="500px"></div>
+        <div class="description">
+          • Occupancy : 4
+            • Number of Childrens : 2
+                • Number of Beds : 2
+                • Bed Type : Queen Bed
+                • Room View : Mountain & Beach View
+                • Size : 100 m²
+                <br><br><hr>
+                <h3>Description</h3>
+                <p style="font-family: Arial;">For your accommodation in Ahmedabad, Every room is spacious and
+                    contemporary with soft lighting, and decorations which is elegant and plush. Our is among
+                    Good Hotels in Ahmedabad near Railway Station. Super Deluxe room offers all the comforts
+                    to make you feel at home. From complimentary breakfast for your good morning to cable
+                    TV within room movies for your entertainment. And host of other modern amenities for
+                    the ultimate comfort.
+                </p><br>
+                <button type="submit" class="button3">View Details</button>
+                <button type="submit" class="button4">BOOK NOW</button>
+      </div>
+      <div id="rooms" ><br><br><br><br><br><br><br><h6>----------- OUR SERVICES -----------</h6>
+      </div>
+      <div id="explore"><h1>Explore Our SERVICES</h1></div><br>
+      <div class="grid" >
+      
+        <div class="grid-data">
+           
+           <img src="rooms.jpg" width="400px" height="300px">
+               
+
+        </div>
+        
+         <div class="grid-data">
+           
+           <img src="restaurant.jpg" width="300px" height="300px">
+
+         </div>
+       
+          <div class="grid-data">
+           
+         
+            <img src="spa.jpg" width="400px" height="300px" >
+       </div>
+       
+       <div class="grid-data">
+           
+       
+        <img src="sports.jpg" width="300px" height="300px">
+   </div>
+   
+   <div class="grid-data">
+           
+   
+    <img src="event.jpg" width="400px">
+</div>
+
+<div class="grid-data">
+           
+    
+    <img src="gym.jpg" width="300px" height="250px">
+</div>
+       </div>
+       <div style="padding-top: 20px; background-color: aliceblue; text-align: center;"> <h1>Terms & Conditions</h1>
+
+        <ul style="text-align: left; margin-left: 150px;">
+        <li> Check-in time: 2 pm.</li>
+        <li>Check-out time: 11 am.</li>
+        <li> Early check-in/late check-out subject to availability.</li>
+        <li>Valid government-issued ID required for check-in</li>
+        <li> No smoking/vaping allowed.</li>
+        <li>No pets allowed.</li> 
+        <li>No cooking/heating appliances allowed.</li> 
+        <li> No loud noise/disturbances after 10 PM.</li>
+        <li>Payment due upon check-in.</li> 
+        <li>No-show will charge.</li> 
+        <li>No outside food/beverages allowed.</li>
+        <li>No soliciting/loitering allowed.</li> 
+        <li>No weapons/firearms allowed.</li> 
+        <li>No illegal activities will entertained.</li> 
+        <li>Hotel reserves right to refuse service.li> 
+        <li>Guest agrees to indemnify hotel for damages.</li> </ul>
+    </div>
+    <div style="padding-top: 20px; background-color: aliceblue; text-align: center;"> <h1>Cancellation Policy</h1>
+        <p style="padding-top: 10px;">To avoid any charges, cancellations must be made 48 hours prior to the date of arrival.</p>
+        <p>Please note that the entire booking amount will be forfeited if cancellation takes place after this time.</p>
+        
+        <div class="nav">
+            <a href="#" class="logo" style="color: hsl(39, 100%, 50%);;">PalmBreeze Paradise</a>
+            <div class="menu">
+                <a href="#">Our ©2025 Grawlix. All right reserved.</a>
+              
+            </div>
+
+
+           
+
+            
+
+       
+       
+        
+
+    
+</body>
+</html
